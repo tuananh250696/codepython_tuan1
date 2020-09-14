@@ -63,23 +63,23 @@ class Application:
         self.date_l.place(x=20, y=0)
 
         # button
-        self.bt_st_catalog = Button(self.left, text="H� s� b�nh nh�n", width=15, height=2, font=('arial 18 bold'),
+        self.bt_st_catalog = Button(self.left, text="Hồ sơ bệnh nhân", width=15, height=2, font=('arial 18 bold'),
                                     bg='orange', command=self.ajax)
         self.bt_st_catalog.place(x=8, y=45)
 
-        self.bt_st_form = Button(self.left, text="N�i soi", width=15, height=2, font=('arial 18 bold'), bg='orange',
+        self.bt_st_form = Button(self.left, text="Nội soi", width=15, height=2, font=('arial 18 bold'), bg='orange',
                                  command=self.endoscopy)
         self.bt_st_form.place(x=8, y=135)
 
-        self.bt_patient = Button(self.left, text="Bi�u m�u in", width=15, height=2, font=('arial 18 bold'), bg='orange',
+        self.bt_patient = Button(self.left, text="Biểu mẫu in", width=15, height=2, font=('arial 18 bold'), bg='orange',
                                  command=self.add_to_bn)
         self.bt_patient.place(x=8, y=225)
 
-        self.bt_endoscop = Button(self.left, text="Danh m�c kh�m", width=15, height=2, font=('arial 18 bold'),
+        self.bt_endoscop = Button(self.left, text="Danh mục khám", width=15, height=2, font=('arial 18 bold'),
                                   bg='orange', command=self.createNewWindow)
         self.bt_endoscop.place(x=8, y=315)
 
-        self.bt_exit1 = Button(self.left, text="Tho�t", width=15, height=2, font=('arial 18 bold'), bg='orange',
+        self.bt_exit1 = Button(self.left, text="Thoát", width=15, height=2, font=('arial 18 bold'), bg='orange',
                                command=self.quit)
         self.bt_exit1.place(x=8, y=405)
 
@@ -123,66 +123,66 @@ class Application:
         self.RightForm = Frame(self.MidFrame, width=1100)
         self.RightForm.pack(side=RIGHT)
 
-        self.bt_add_patient = Button(self.right, text="L�u h� s�", width=14, height=3, font=('arial 12 bold'),
+        self.bt_add_patient = Button(self.right, text="Lưu hồ sơ", width=14, height=3, font=('arial 12 bold'),
                                      bg='white', command=self.get_itemsdatabase)
         self.bt_add_patient.place(x=0, y=0)
 
-        self.bt_open_file = Button(self.right, text="M� h� s�", width=14, height=3, font=('arial 12 bold'), bg='white',
+        self.bt_open_file = Button(self.right, text="Mở hồ sơ", width=14, height=3, font=('arial 12 bold'), bg='white',
                                    command=self.create_pdf1)
         self.bt_open_file.place(x=150, y=0)
         #
-        self.bt_save_file = Button(self.right, text="L�m m�i", width=14, height=3, font=('arial 12 bold'), bg='white',
+        self.bt_save_file = Button(self.right, text="Làm mới", width=14, height=3, font=('arial 12 bold'), bg='white',
                                    command=self.delete_text)
         self.bt_save_file.place(x=300, y=0)
         #
-        self.bt_delele1 = Button(self.right, text="X�a", width=14, height=3, font=('arial 12 bold'), bg='white',
+        self.bt_delele1 = Button(self.right, text="Xóa", width=14, height=3, font=('arial 12 bold'), bg='white',
                                  command=self.Deletedata)
         # command=self.Deletedata)
         self.bt_delele1.place(x=450, y=0)
         #
-        self.bt_thoat = Button(self.right, text="�ng", width=14, height=3, font=('arial 12 bold'), bg='white',
+        self.bt_thoat = Button(self.right, text="Đóng", width=14, height=3, font=('arial 12 bold'), bg='white',
                                command=self.add_to_cart)
 
         self.bt_thoat.place(x=600, y=0)
-        self.bt_thoat = Button(self.right, text="Kh�i ph�c c�i �t g�c", width=14, height=3, font=('arial 12 bold'),
+        self.bt_thoat = Button(self.right, text="Khôi phục cài đặt gốc", width=14, height=3, font=('arial 12 bold'),
                                bg='white',command=self.Deletealldata)
         self.bt_thoat.place(x=750, y=0)
 
-        self.tenbenhnhan = Label(self.bottom, text="T�n b�nh nh�n:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.tenbenhnhan = Label(self.bottom, text="Tên bệnh nhân:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.tenbenhnhan.place(x=15, y=5)
 
         self.name_p = Entry(self.bottom, font=('arial 24 bold'), width=20)
         self.name_p.place(x=5, y=30)
         self.name_p.focus()
 
-        self.adr = Label(self.bottom, text="�a ch�:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.adr = Label(self.bottom, text="Địa chỉ:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.adr.place(x=15, y=75)
 
         self.adr_p = Entry(self.bottom, font=('arial 24 bold'), width=20)
         self.adr_p.place(x=5, y=100)
 
-        self.year_b = Label(self.bottom, text="Nm sinh:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.year_b = Label(self.bottom, text="Năm sinh:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.year_b.place(x=15, y=150)
 
         self.y_b = Entry(self.bottom, font=('arial 24 bold'), width=20)
         self.y_b.place(x=5, y=175)
 
-        self.job = Label(self.bottom, text="Ngh� nghi�p:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.job = Label(self.bottom, text="Nghề nghiệp:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.job.place(x=425, y=5)
         self.jobw = Entry(self.bottom, font=('arial 24 bold'), width=20)
         self.jobw.place(x=410, y=30)
 
-        self.st = Label(self.bottom, text="Tri�u ch�ng:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.st = Label(self.bottom, text="Triệu chứng:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.st.place(x=420, y=75)
         self.stom = Entry(self.bottom, font=('arial 24 bold'), width=20)
         self.stom.place(x=410, y=100)
 
-        self.sbh = Label(self.bottom, text="S� b�o hi�m:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.sbh = Label(self.bottom, text="Số bảo hiểm:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.sbh.place(x=420, y=150)
         self.nbh = Entry(self.bottom, font=('arial 24 bold'), width=20)
         self.nbh.place(x=410, y=175)
 
-        self.tel = Label(self.bottom, text="i�n tho�i:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.tel = Label(self.bottom, text="Điện thoại:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.tel.place(x=800, y=5)
         self.telw = Entry(self.bottom, font=('arial 24 bold'), width=12)
         self.telw.place(x=790, y=30)
@@ -191,7 +191,7 @@ class Application:
         # self.enteride.place(x=800, y=175)
         # self.enteride.focus()
 
-        self.droplist = OptionMenu(self.bottom, c, 'NAM', 'N�')
+        self.droplist = OptionMenu(self.bottom, c, 'NAM', 'NỮ')
         self.droplist.pack()
         self.menu = self.droplist.nametowidget(self.droplist.menuname)
         self.menu.configure(font=('arial 20 bold'))
@@ -199,27 +199,27 @@ class Application:
         self.droplist.config(width=10, font=('arial 18 bold'))
         self.droplist.place(x=800, y=75)
 
-        self.seachinfo = Button(self.bottom1, text="T�m ki�m", width=15, height=1, font=('arial 18 bold'), bg='orange',
+        self.seachinfo = Button(self.bottom1, text="Tìm kiếm", width=15, height=1, font=('arial 18 bold'), bg='orange',
                                 command=self.Search)
         self.seachinfo.place(x=800, y=5)
 
-        self.name_info = Label(self.bottom1, text="T�n:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.name_info = Label(self.bottom1, text="Tên:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.name_info.place(x=5, y=10)
 
         self.name_infos = Entry(self.bottom1, width=18, font=('arial 20 bold'), bg='white')
         self.name_infos.place(x=5, y=38)
 
-        self.job_s = Label(self.bottom1, text="Ngh� nghi�p:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.job_s = Label(self.bottom1, text="Nghề nghiệp:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.job_s.place(x=290, y=10)
         self.from_jobs = Entry(self.bottom1, font=('arial 20 bold'), width=12)
         self.from_jobs.place(x=290, y=38)
 
-        self.aadd_s = Label(self.bottom1, text="�a Ch�:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.aadd_s = Label(self.bottom1, text="Địa Chỉ:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.aadd_s.place(x=485, y=10)
         self.from_addss = Entry(self.bottom1, font=('arial 20 bold'), width=10)
         self.from_addss.place(x=485, y=38)
 
-        self.born_s2 = Label(self.bottom1, text="Nm sinh:", font=('arial 12 bold'), fg='black', bg='lightblue')
+        self.born_s2 = Label(self.bottom1, text="Năm sinh:", font=('arial 12 bold'), fg='black', bg='lightblue')
         self.born_s2.place(x=650, y=10)
         self.born_agess = Entry(self.bottom1, font=('arial 20 bold'), width=5)
         self.born_agess.place(x=650, y=38)
@@ -271,7 +271,7 @@ class Application:
         cursor = conn.cursor()
 
         if self.name_p.get() == '' or self.adr_p.get() == '' or self.y_b.get() == '' or self.jobw.get() == '' or self.stom.get() == '' or self.nbh.get() == '' or c.get() == '' or self.telw.get() == '':
-            tkinter.messagebox.showinfo("Error", "i�n �y � th�ng tin.")
+            tkinter.messagebox.showinfo("Error", "Điền đầy đủ thông tin.")
         else:
 
             cursor.execute('INSERT INTO member (name, address, age, job, symptom,sbh,sex,tel ) VALUES(?,?,?,?,?,?,?,?)', (
@@ -313,13 +313,13 @@ class Application:
         conn = sqlite3.connect("db_member.db")
         cursor = conn.cursor()
         if namepk == '' or name_dt == '' or address_pk == '':
-            tkinter.messagebox.showinfo("Error", "i�n �y � th�ng tin.")
+            tkinter.messagebox.showinfo("Error", "Điền đầy đủ thông tin.")
         else:
             cursor.execute("DELETE FROM print_dt WHERE id=1")
             cursor.execute('CREATE TABLE IF NOT EXISTS print_dt (name_pk TEXT,dt_name TEXT,address TEXT)')
             cursor.execute('INSERT INTO print_dt (name_pk,dt_name,address) VALUES(?,?,?)',
                            (namepk, name_dt, address_pk))
-            tkinter.messagebox.showinfo("Success", "� th�m th�ng tin")
+            tkinter.messagebox.showinfo("Success", "Đã thêm thông tin")
             conn.commit()
             cursor.close()
 
@@ -332,38 +332,38 @@ class Application:
         self.rightw3 = Frame(addWindow, width=600, height=600, bg='lightblue')
         self.rightw3.pack(side=LEFT)
 
-        self.adr2 = Label(self.rightw3, text="Ph�ng kh�m:", font=('arial 16 bold'), fg='black', bg='lightblue')
+        self.adr2 = Label(self.rightw3, text="Phòng khám:", font=('arial 16 bold'), fg='black', bg='lightblue')
         self.adr2.place(x=10, y=10)
         self.adr2_p = Entry(self.rightw3, font=('arial 18 bold'), width=32)
         self.adr2_p.place(x=150, y=10)
 
-        self.doctor = Label(self.rightw3, text=" B�c s) :", font=('arial 16 bold'), fg='black', bg='lightblue')
+        self.doctor = Label(self.rightw3, text=" Bác sĩ :", font=('arial 16 bold'), fg='black', bg='lightblue')
         self.doctor.place(x=10, y=85)
 
         self.doctor_p = Entry(self.rightw3, font=('arial 18 bold'), width=32)
         self.doctor_p.place(x=150, y=75)
 
-        self.n2 = Label(self.rightw3, text="�a ch�:", font=('arial 16 bold'), fg='black', bg='lightblue')
+        self.n2 = Label(self.rightw3, text="Địa chỉ:", font=('arial 16 bold'), fg='black', bg='lightblue')
         self.n2.place(x=10, y=150)
 
         self.n2_p = Entry(self.rightw3, font=('arial 18 bold'), width=32)
         self.n2_p.place(x=150, y=150)
 
-        self.add_dt = Button(self.rightw3, text="C�p nh�t", width=12, height=2, font=('arial 18 bold'), bg='orange',
+        self.add_dt = Button(self.rightw3, text="Cập nhật", width=12, height=2, font=('arial 18 bold'), bg='orange',
                              command=self.database_print)
         self.add_dt.place(x=10, y=260)
 
-        self.add_dl = Button(self.rightw3, text="X�a", width=12, height=2, font=('arial 18 bold'), bg='orange',
+        self.add_dl = Button(self.rightw3, text="Xóa", width=12, height=2, font=('arial 18 bold'), bg='orange',
                              command=self.Deletedata_print)
         self.add_dl.place(x=200, y=260)
 
-        self.add_dltd = Button(self.rightw3, text="�ng", width=12, height=2, font=('arial 18 bold'), bg='orange',
+        self.add_dltd = Button(self.rightw3, text="Đóng", width=12, height=2, font=('arial 18 bold'), bg='orange',
                                command=self.quit_print2)
         self.add_dltd.place(x=390, y=260)
 
         self.scrollbarx = Scrollbar(self.rightw2, orient=HORIZONTAL)
         self.scrollbary = Scrollbar(self.rightw2, orient=VERTICAL)
-        self.tree1 = ttk.Treeview(self.rightw2, columns=("Id", "Ph�ng kh�m", "B�c s)", "�a ch�"),
+        self.tree1 = ttk.Treeview(self.rightw2, columns=("Id", "Phòng khám", "Bác sĩ", "Địa chỉ"),
                                   selectmode="extended",
                                   height=400, yscrollcommand=self.scrollbary.set, xscrollcommand=self.scrollbarx.set)
         self.scrollbary.config(command=self.tree1.yview)
@@ -378,9 +378,9 @@ class Application:
 
         self.tree1.pack()
         self.tree1.heading('Id', text="Id", anchor=W)
-        self.tree1.heading('Ph�ng kh�m', text="Ph�ng kh�m", anchor=W)
-        self.tree1.heading('B�c s)', text="B�c s)", anchor=W)
-        self.tree1.heading('�a ch�', text="�a ch�", anchor=W)
+        self.tree1.heading('Phòng khám', text="Phòng khám", anchor=W)
+        self.tree1.heading('Bác sĩ', text="Bác sĩ", anchor=W)
+        self.tree1.heading('Địa chỉ', text="Địa chỉ", anchor=W)
         self.tree1.pack()
 
         conn = sqlite3.connect("db_member.db")
@@ -421,13 +421,13 @@ class Application:
         conn = sqlite3.connect("db_member.db")
         cursor = conn.cursor()
         if nameadd22 == '' or name_dt22 == '':
-            tkinter.messagebox.showinfo("Error", "i�n �y � th�ng tin!.")
+            tkinter.messagebox.showinfo("Error", "điền đầy đủ thông tin!.")
 
         else:
             cursor.execute('CREATE TABLE IF NOT EXISTS print_dt22 (name_pk22 TEXT,dt_name22 TEXT)')
             cursor.execute('INSERT INTO print_dt22 (name_pk22,dt_name22) VALUES(?,?)',
                            (nameadd22, name_dt22))
-            tkinter.messagebox.showinfo("Success", "� th�m th�ng tin")
+            tkinter.messagebox.showinfo("Success", "Đã thêm thông tin")
             conn.commit()
             cursor.close()
 
@@ -441,34 +441,34 @@ class Application:
         self.rightw3 = Frame(newWindowaddf, width=290, height=500, bg='lightblue')
         self.rightw3.pack(side=LEFT)
 
-        self.n3 = Label(self.rightw3, text="Ch�n o�n:", font=('arial 14 bold'), fg='black', bg='lightblue')
+        self.n3 = Label(self.rightw3, text="Chẩn Đoán:", font=('arial 14 bold'), fg='black', bg='lightblue')
         self.n3.place(x=10, y=10)
 
         self.ad_if2 = Entry(self.rightw3, font=('arial 20 bold'), width=16)
         self.ad_if2.place(x=10, y=40)
 
-        self.n4 = Label(self.rightw3, text="Danh M�c:", font=('arial 14 bold'), fg='black', bg='lightblue')
+        self.n4 = Label(self.rightw3, text="Danh Mục:", font=('arial 14 bold'), fg='black', bg='lightblue')
         self.n4.place(x=10, y=90)
 
-        self.droplist = OptionMenu(self.rightw3, c1, 'TAI', 'MhI', 'H�NG')
+        self.droplist = OptionMenu(self.rightw3, c1, 'TAI', 'MŨI', 'HỌNG')
         self.droplist.pack()
 
         self.menu = self.droplist.nametowidget(self.droplist.menuname)
         self.menu.configure(font=('arial 28 bold'))
-        c1.set('H�NG')
+        c1.set('HỌNG')
 
         self.droplist.config(width=16, height=2, font=('arial 18 bold'))
         self.droplist.place(x=5, y=120)
 
-        self.add_ifmt = Button(self.rightw3, text="C�p nh�t", width=14, height=2, font=('arial 20 bold'), bg='orange',
+        self.add_ifmt = Button(self.rightw3, text="Cập nhật", width=14, height=2, font=('arial 20 bold'), bg='orange',
                                command=self.database_print111)
         self.add_ifmt.place(x=5, y=200)
 
-        self.add_dltifmt = Button(self.rightw3, text="X�a", width=14, height=2, font=('arial 20 bold'),
+        self.add_dltifmt = Button(self.rightw3, text="Xóa", width=14, height=2, font=('arial 20 bold'),
                                   bg='orange', command=self.Deletedata_NewWindow)
         self.add_dltifmt.place(x=5, y=300)
 
-        self.add_dltd = Button(self.rightw3, text="�ng", width=14, height=2, font=('arial 20 bold'),
+        self.add_dltd = Button(self.rightw3, text="Đóng", width=14, height=2, font=('arial 20 bold'),
                                bg='orange', command=self.quit_print1)
         self.add_dltd.place(x=5, y=400)
         scrollbary = Scrollbar(self.rightw2, orient=VERTICAL)
@@ -512,10 +512,10 @@ class Application:
         root.destroy()
 
     def quit_print1(self):
-        tkinter.messagebox.showinfo("Success", "Tho�t c�i �t danh m�c")
+        tkinter.messagebox.showinfo("Success", "Thoát cài đặt danh mục")
 
     def quit_print2(self):
-        tkinter.messagebox.showinfo("Success", "Tho�t c�i �t bi�u m�u")
+        tkinter.messagebox.showinfo("Success", "Thoát cài đặt biểu mẫu")
 
     def hide(self):
         root.withdraw()
@@ -680,7 +680,7 @@ class Application:
                 pdf.set_text_color(0, 70, 255)
                 pdf.cell(30)
 
-                pdf.cell(0, 0, "C:", ln=1)
+                pdf.cell(0, 0, "ĐC:", ln=1)
                 pdf.set_font('DejaVu', '', 12)
                 pdf.set_text_color(0, 0, 0)
                 pdf.cell(40)
@@ -697,12 +697,12 @@ class Application:
                 pdf.set_font('DejaVu', '', 16)
                 pdf.set_text_color(255, 0, 40)
                 pdf.cell(35)
-                pdf.cell(0, 15, 'PHI�U KH�M N�I SOI TAI-MhI-H�NG', ln=1)
+                pdf.cell(0, 15, 'PHIẾU KHÁM NỘI SOI TAI-MŨI-HỌNG', ln=1)
 
                 pdf.set_font('DejaVu', '', 12)
                 pdf.set_text_color(0, 70, 255)
                 pdf.cell(75)
-                pdf.cell(0, 0, 'S� Phi�u : ' + str(row5[0]), ln=1)
+                pdf.cell(0, 0, 'Số Phiếu : ' + str(row5[0]), ln=1)
 
                 pdf.set_font('DejaVu', '', 16)
                 pdf.set_text_color(0, 70, 255)
@@ -710,34 +710,34 @@ class Application:
 
                 pdf.set_font('DejaVu', '', 10)
                 pdf.cell(5)
-                pdf.cell(0, 0, 'T�n b�nh nh�n : ' + str(row5[1]), ln=1)
+                pdf.cell(0, 0, 'Tên bệnh nhân : ' + str(row5[1]), ln=1)
                 pdf.cell(85)
-                pdf.cell(0, 0, 'Tu�i : ' + str(row5[4]), ln=1)
+                pdf.cell(0, 0, 'Tuổi : ' + str(row5[4]), ln=1)
                 pdf.cell(135)
-                pdf.cell(0, 0, 'Gi�i t�nh : ' + str(row5[6]), ln=1)
+                pdf.cell(0, 0, 'Giới tính : ' + str(row5[6]), ln=1)
 
                 pdf.set_font('DejaVu', '', 10)
                 pdf.set_text_color(0, 70, 255)
                 pdf.cell(0, 8, ' ', ln=1)
                 pdf.cell(5)
-                pdf.cell(0, 0, '�a ch� : ' + str(row5[3]), ln=1)
+                pdf.cell(0, 0, 'Địa chỉ : ' + str(row5[3]), ln=1)
                 pdf.cell(85)
-                pdf.cell(0, 0, 'S� b�o hi�m : ' + str(row5[7]), ln=1)
+                pdf.cell(0, 0, 'Số bảo hiểm : ' + str(row5[7]), ln=1)
                 pdf.cell(135)
-                pdf.cell(0, 0, 'Ngh� nghi�p : ' + str(row5[2]), ln=1)
+                pdf.cell(0, 0, 'Nghề nghiệp : ' + str(row5[2]), ln=1)
 
                 pdf.set_font('DejaVu', '', 10)
                 pdf.set_text_color(0, 70, 255)
                 pdf.cell(0, 8, ' ', ln=1)
                 pdf.cell(5)
-                pdf.cell(0, 0, 'Tri�u ch�ng : ' + str(row5[5]), ln=1)
+                pdf.cell(0, 0, 'Triệu chứng : ' + str(row5[5]), ln=1)
                 pdf.cell(85)
-                pdf.cell(0, 0, 'i�n tho�i: ' + str(row5[8]), ln=1)
+                pdf.cell(0, 0, 'Điện thoại: ' + str(row5[8]), ln=1)
 
                 pdf.set_font('DejaVu', '', 14)
                 pdf.cell(0, 15, ' ', ln=1)
                 pdf.cell(70)
-                pdf.cell(0, 0, 'H�NH �NH N�I SOI ', ln=1)
+                pdf.cell(0, 0, 'HÌNH ẢNH NỘI SOI ', ln=1)
                 #
                 file_name =  ('anh\%s.png' % ("a" + str(row["max(id)"]) + "a" + str(2)))
                 file_name1 = ('anh\%s.png' % ("a" + str(row["max(id)"]) + "a" + str(3)))
@@ -756,21 +756,21 @@ class Application:
                 pdf.set_font('DejaVu', '', 16)
                 pdf.cell(0, 132, ' ', ln=1)
                 pdf.cell(60)
-                pdf.cell(0, 0, 'M� T� K�T QU� N�I SOI ', ln=1)
+                pdf.cell(0, 0, 'MÔ TẢ KẾT QUẢ NỘI SOI ', ln=1)
                 pdf.set_font('DejaVu', '', 12)
                 pdf.cell(0, 8, ' ', ln=1)
                 pdf.cell(12)
-                pdf.cell(0, 7, 'Ch�n o�n : ', ln=1)
+                pdf.cell(0, 7, 'Chẩn đoán : ', ln=1)
                 pdf.cell(12)
-                pdf.cell(0, 7, 'i�u tr� : ', ln=1)
+                pdf.cell(0, 7, 'Điều trị : ', ln=1)
                 pdf.cell(12)
-                pdf.cell(0, 7, 'Ch� �nh b�c s) : ', ln=1)
+                pdf.cell(0, 7, 'Chỉ định bác sĩ : ', ln=1)
 
                 pdf.set_x(120)
-                pdf.cell(0, 10, " Ng�y " + str(today.day) + " Th�ng " + str(today.month) + " Nm " + str(today.year),
+                pdf.cell(0, 10, " Ngày " + str(today.day) + " Tháng " + str(today.month) + " Năm " + str(today.year),
                          ln=1)
                 pdf.set_x(145)
-                pdf.cell(0, 6, 'B�c s) : ', ln=1)
+                pdf.cell(0, 6, 'Bác sĩ : ', ln=1)
                 pdf.cell(0, 15, ' ', ln=1)
                 pdf.set_x(126)
                 pdf.cell(0, 0, t2, ln=1)
@@ -793,3 +793,4 @@ class Application:
 app = QApplication(sys.argv)
 b = Application(root)
 root.mainloop()
+
